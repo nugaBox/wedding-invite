@@ -208,3 +208,4 @@ html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-m
 /* /* .all-access-pass {bottom:unset; } */
 /* #ac-globalfooter {--footer-background: #fff} */
 #gallery > div.all-access-pass__container {position: relative}
+.ac-gf-sosumi p {text-align:right !important}
