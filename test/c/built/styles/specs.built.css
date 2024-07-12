@@ -1,0 +1,363 @@
+.icon-after::after, .more::after {
+    top: -.1em;
+}
+
+.more:before, .more:after, .icon-chevronright:after, #ac-globalfooter .ac-gf-more:after {
+    top: -0.08em;
+}
+.icon-wrapper .icon, .icon-wrapper .icon-after:after, .icon-wrapper .icon-before:before, .icon-wrapper .more:not(.icon-before):after {
+    position: relative;
+}
+
+.xsmall{
+    display: none;
+}
+
+@media only screen and (max-width: 350px){
+    .xsmall{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:1068px) {
+    .section-size-and-weight .weight-copy {
+        display: inline-block;
+    }
+}
+
+.custom-br{
+    display: block;
+}
+@media only screen and (max-width: 734px) and (min-width: 420px){
+    .custom-br{
+        display: none;
+    }
+}
+
+
+.section-built-in-apps .techspecs-app-icon-calendar {
+    background-image: url(../../images/specs/icon_calendar__ez3yo8qo92s2_large.png);
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+    .section-built-in-apps .techspecs-app-icon-calendar {
+        background-image:url(../../images/specs/icon_calendar__ez3yo8qo92s2_large_2x.png)
+    }
+}
+
+.section-size-and-weight .image-dimensions-iphone {
+    background-image: url(../../images/specs/dimensions_iphone__c50mrkxiyeuu_large.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+    .section-size-and-weight .image-dimensions-iphone {
+        background-image:url(../../images/specs/dimensions_iphone__c50mrkxiyeuu_large_2x.jpg)
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-size-and-weight .image-dimensions-iphone {
+        background-image:url(../../images/specs/dimensions_iphone__c50mrkxiyeuu_medium.jpg)
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-size-and-weight .image-dimensions-iphone {
+        background-image:url(../../images/specs/dimensions_iphone__c50mrkxiyeuu_medium_2x.jpg)
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-size-and-weight .image-dimensions-iphone {
+        background-image:url(../../images/specs/dimensions_iphone__c50mrkxiyeuu_small.jpg)
+    }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .section-size-and-weight .image-dimensions-iphone {
+        background-image:url(../../images/specs/dimensions_iphone__c50mrkxiyeuu_small_2x.jpg)
+    }
+}
+
+.section-size-and-weight .image-dimensions-iphone-plus {
+    background-image: url(../../images/specs/dimensions_iphone_plus__dudb5pikhxw2_large.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+    .section-size-and-weight .image-dimensions-iphone-plus {
+        background-image:url(../../images/specs/dimensions_iphone_plus__dudb5pikhxw2_large_2x.jpg)
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-size-and-weight .image-dimensions-iphone-plus {
+        background-image:url(../../images/specs/dimensions_iphone_plus__dudb5pikhxw2_medium.jpg)
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-size-and-weight .image-dimensions-iphone-plus {
+        background-image:url(../../images/specs/dimensions_iphone_plus__dudb5pikhxw2_medium_2x.jpg)
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-size-and-weight .image-dimensions-iphone-plus {
+        background-image:url(../../images/specs/dimensions_iphone_plus__dudb5pikhxw2_small.jpg)
+    }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .section-size-and-weight .image-dimensions-iphone-plus {
+        background-image:url(../../images/specs/dimensions_iphone_plus__dudb5pikhxw2_small_2x.jpg)
+    }
+}
+
+.section-display .image-display-iphone {
+    background-image: url(../../images/specs/display_iphone__c787qa91xs6e_large.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+    .section-display .image-display-iphone {
+        background-image:url(../../images/specs/display_iphone__c787qa91xs6e_large_2x.jpg)
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-display .image-display-iphone {
+        background-image:url(../../images/specs/display_iphone__c787qa91xs6e_small.jpg)
+    }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .section-display .image-display-iphone {
+        background-image:url(../../images/specs/display_iphone__c787qa91xs6e_small_2x.jpg)
+    }
+}
+
+.section-display .image-display-iphone-plus {
+    background-image: url(../../images/specs/display_iphone_plus__bkewu6rp2uxe_large.jpg);
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+    .section-display .image-display-iphone-plus {
+        background-image:url(../../images/specs/display_iphone_plus__bkewu6rp2uxe_large_2x.jpg)
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-display .image-display-iphone-plus {
+        background-image:url(../../images/specs/display_iphone_plus__bkewu6rp2uxe_small.jpg)
+    }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .section-display .image-display-iphone-plus {
+        background-image:url(../../images/specs/display_iphone_plus__bkewu6rp2uxe_small_2x.jpg)
+    }
+}
+
+
+/* carrier */
+.section-carriers .image-logo-kt.carrier-logo {
+    width: 38px;
+    height: 44px;
+    background-size: 38px 44px;
+    background-repeat: no-repeat;
+    left: 50%;
+    background-image: url("../../images/specs/logo_kt_black__dewhpgrq3m6a_large.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-carriers .image-logo-kt.carrier-logo {
+        background-image: url("../../images/specs/logo_kt_black__dewhpgrq3m6a_large_2x.png")
+    }
+}
+.section-carriers .image-logo-lg.carrier-logo {
+    width: 88px;
+    height: 44px;
+    background-size: 88px 44px;
+    background-repeat: no-repeat;
+    left: 50%;
+    margin-left: -41.5px;
+    background-image: url("../../images/specs/logo_lguplus_gray__dewhpgrq3m6a_large.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-carriers .image-logo-lg.carrier-logo {
+        background-image: url("../../images/specs/logo_lguplus_gray__dewhpgrq3m6a_large_2x.png")
+    }
+}
+
+.section-carriers .image-logo-sk.carrier-logo {
+    width: 93px;
+    height: 44px;
+    background-size: 93px 44px;
+    background-repeat: no-repeat;
+    left: 50%;
+    margin-left: -46.5px;
+    background-image: url("../../images/specs/logo_sktelecom__dewhpgrq3m6a_large.png");
+    background-position-y: 1px
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-carriers .image-logo-sk.carrier-logo {
+        background-image: url("../../images/specs/logo_sktelecom__dewhpgrq3m6a_large_2x.png")
+    }
+}
+
+.carrier-logo{
+    height: 44px !important;
+}
+
+
+@media only screen and (max-width: 734px){
+    .section-carriers .carrier{
+        width: 50%;
+        float: left;
+    }
+    .carrier-logo{
+        height: 65px !important;
+    }
+    .section-carriers .image-logo-sk.carrier-logo{
+        position: relative;
+        margin: 0 auto;
+    }
+    .section-carriers .image-logo-kt{
+        position: relative;
+        margin-left: -45.5px;
+    }
+    .section-carriers .image-logo-lg.carrier-logo{
+        position: relative;
+        margin: 0 auto;
+    }
+    .techspecs.with-fullwidthrowheader-small .techspecs-section{
+        padding-bottom: 15px;
+    }
+}
+
+.section-external .image-external-connectors .diagram-text.diagram-speaker-mic {
+    left: 623px;
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-external .image-external-connectors .diagram-text.diagram-speaker-mic {
+        left: 404px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-external .image-external-connectors .diagram-text.diagram-speaker-mic {
+        left: 25px;
+
+    }
+
+    .section-external .image-external-connectors .diagram-text.diagram-side {
+        top: 106px;
+    }
+}
+
+/* carrier align for S */
+@media only screen and (max-width: 734px) {
+    .section-carriers .carrier-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* KC mark */
+.rowgroup-configure {
+    border-bottom: none;
+}
+
+.techspecs-section.section-kc-cert .techspecs-column.ect {
+    width: 75%;
+}
+
+@media only screen and (max-width: 734px) {
+    .techspecs-section.section-kc-cert .techspecs-column.ect {
+        width: 100%;
+    }
+}
+
+.techspecs-section.section-kc-cert .techspecs-column.ect .row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.techspecs-section.section-kc-cert .techspecs-list-disc {
+    flex-basis: 46%;
+    max-width: 46%;
+}
+
+.techspecs-section.section-kc-cert .techspecs-list-disc:first-child {
+    margin-left: 1em;
+}
+
+.techspecs-section.section-kc-cert .techspecs-list-disc:nth-child(2){
+    margin-top: 0;
+    margin-left: 4%;
+}
+
+.techspecs-section.section-kc-cert .techspecs-list-disc li {
+    list-style: disc;
+    margin-top: .4em;
+}
+
+.techspecs-section.section-kc-cert .techspecs-list-disc li:first-child {
+    margin-top: 0;
+}
+
+
+.image-kc {
+    width: 14px;
+    height: 21px;
+    background-size: 14px 21px;
+    background-repeat: no-repeat;
+    background-image: url("../../images/specs/image__bs3c7k4nox36_large.png");
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx){
+    .image-kc {
+        background-image: url("../../images/specs/image__bs3c7k4nox36_large_2x.png");
+    }
+}
+
+@media only screen and (max-width: 734px){
+    .techspecs-section.section-kc-cert .techspecs-column.ect .row {
+        flex-direction: column;
+    }
+
+    .techspecs-section.section-kc-cert .techspecs-list-disc:nth-child(2){
+        margin-top: .4em;
+        margin-left: 1em;
+    }
+
+    .techspecs-section.section-kc-cert {
+        margin-bottom: 48px;
+    }
+
+    .techspecs.with-2-columns.with-fullwidthrowheader-small .section-kc-cert .techspecs-column.ect {
+        width: 90%;
+    }
+
+    .techspecs-section.section-kc-cert .techspecs-list-disc {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+br.br-400 {
+    display: none;
+}
+
+@media only screen and (max-width: 400px) {
+    br.br-400 {
+        display: block;
+    }
+}
+/* KC mark end */
