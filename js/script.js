@@ -1,3 +1,4 @@
+// 브라우저 터치 및 스크롤 방지
 window.onload = function () {
     disableScroll = () => {
         document.querySelector('body').addEventListener('touchmove', this.removeEvent, { passive: false });
@@ -16,6 +17,8 @@ window.onload = function () {
         document.querySelector('body').removeEventListener('mousewheel', this.removeEvent);
     }
 }
+
+// 복사하기 버튼
 function activateCopied(event) {
     event.preventDefault();  // 기본 링크 동작 방지
 
@@ -40,7 +43,7 @@ function activateCopied(event) {
     }
 }
 
-// 배경음 설정
+// BGM 설정
 var currentAudio = null;
 
 function playAudio() {
