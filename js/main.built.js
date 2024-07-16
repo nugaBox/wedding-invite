@@ -12732,7 +12732,7 @@
     },
     function (e, t, i) {
         "use strict";
-        console.warn('"setAttributes" is deprecated, please use "setAttributeForElements" instead.'), (e.exports = i(88));
+        //console.warn('"setAttributes" is deprecated, please use "setAttributeForElements" instead.'), (e.exports = i(88));
     },
     function (e, t, i) {
         "use strict";
