@@ -26,7 +26,7 @@ html {scroll-behavior:smooth; }
 }
 
 /* section 공통 */
-.subsection .section-header {padding-top: 100px;}
+section.subsection .section-header {padding-top: 100px;}
 .section-highlights .section-header {padding-top: 100px}
 .section-header .section-header-desc {font-size:1.4em;}
 /* .all-access-pass__container{display: none} */
@@ -41,19 +41,19 @@ html {scroll-behavior:smooth; }
 }
 
 /* 메인 */
-.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:600px}
-.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top: 0;}
-.inline-media-component-container .video-wrapper .end-frame img {width: unset; height:100%}
+html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:600px}
+html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top: 0;}
+html.inline-media-component-container .video-wrapper .end-frame img {width: unset; height:100%}
 #main > section.section.section-welcome > div > div.welcome__video.welcome__video-avail > img {height:calc(100vh - 100px);}
 .welcome__lockup {position: relative;top: -200px;z-index: 999;}
 @media only screen and (max-width: 1068px) {
-    .inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top:0}
-    .inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:90vh}
+    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top:0}
+    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:90vh}
     /* #main > section.section.section-welcome > div > div.welcome__video.welcome__video-avail > img {height:90vh} */
 }
 @media only screen and (max-width: 734px) {
-    .inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top:0}
-    .inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:600px}
+    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top:0}
+    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:600px}
     #main > section.section.section-welcome > div > div.welcome__video.welcome__video-avail > img {height:600px}
     
 }
