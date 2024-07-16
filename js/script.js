@@ -1,3 +1,8 @@
+if(window.console!=undefined){
+    setTimeout(console.log.bind(console,"%c Lovely Wedding Invitation '◡'","font:2.5em Arial;color:#A34140;font-weight:bold"),0);
+    setTimeout(console.log.bind(console,"%c made by Nuga & Song2","font:2em Arial;color:#7c7c7c;"),0);
+}
+
 // 브라우저 터치 및 스크롤 방지
 window.onload = function () {
     disableScroll = () => {
@@ -5,12 +10,10 @@ window.onload = function () {
         document.querySelector('body').addEventListener('onclick', this.removeEvent, { passive: false });
         document.querySelector('body').addEventListener('mousewheel', this.removeEvent, { passive: false });
     }
-
     removeEvent = e => {
         e.preventDefault();
         e.stopPropagation();
     }
-
     enableScroll = () => {
         document.querySelector('body').removeEventListener('touchmove', this.removeEvent);
         document.querySelector('body').removeEventListener('onclick', this.removeEvent);
@@ -20,18 +23,17 @@ window.onload = function () {
 
 // 복사하기 버튼
 function activateCopied(event) {
-    event.preventDefault();  // 기본 링크 동작 방지
+    // 기본 링크 동작 방지
+    event.preventDefault();
 
     const clickedElement = event.target;
     const copiedElement = document.getElementById('copied');
-
-    // a 태그의 텍스트를 클립보드에 복사
     const textToCopy = clickedElement.textContent;
-
+    
     navigator.clipboard.writeText(textToCopy).then(function () {
-        //console.log('텍스트가 클립보드에 복사되었습니다: ', textToCopy);
+        //console.log(textToCopy);
     }).catch(function (error) {
-        //console.error('텍스트를 클립보드에 복사하는 동안 오류가 발생했습니다: ', error);
+        //console.error(error);
     });
 
     if (copiedElement) {
@@ -45,7 +47,6 @@ function activateCopied(event) {
 
 // BGM 설정
 var currentAudio = null;
-
 function playAudio() {
     var audioSrc = "./audio/bgm.mp3";
 
@@ -81,7 +82,16 @@ function playAudio() {
         currentAudio = new Audio(audioSrc);
         currentAudio.loop = true;
         currentAudio.volume = 0.5;
-        currentAudio.play();
+        promise = currentAudio.play();
+        if (promise !== undefined) {
+            promise.then(_ => {
+                currentAudio.play();
+              // Autoplay started!
+            }).catch(error => {
+                console.warn ("?? : 브라우저 정책으로 인해 음악이 자동으로 재생되지 않습니다.\n  오디오 버튼을 눌러주세요 🔊😅")
+              // Autoplay was prevented.
+            });
+          }
         document.getElementById('globalnav-bgm-on').style.display = 'flex';
         document.getElementById('globalnav-bgm-off').style.display = 'none';
         document.getElementById('menu-bgm-on').style.display = 'flex';
@@ -92,7 +102,6 @@ function playAudio() {
         document.getElementById('mobilenav-bgm-off').style.display = 'none';
     }
 }
-
 window.onload = function () {
     playAudio();
 }
