@@ -1,36 +1,134 @@
+@charset "UTF-8";
 html {scroll-behavior:smooth; }
-body {font-family: 'Pretendard Variable' !important;}
-body:lang(ko) {font-family: 'Pretendard Variable' !important;}
+
+/* Header */
 #globalnav-list > li.globalnav-item.globalnav-item-apple > a > span > img {width:28px}
-
-#media-gallery-item-1 > p {max-width:1000px; width: 800px;}
-#media-gallery-item-1 > p > span{color:rgb(0,113,227); font-weight:700;}
-.intro-name {font-size:1.5em; font-weight:700}
-.intro-couple {background-image: url(../images/intro/intro_couple.png)}
-#variable-width-gallery-item-1 > div {width:100%}
-html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:600px}
-
-#ac-globalfooter .contributor {margin-bottom: 10px; display: block; font-weight: 700; font-size: 1.2em;}
-#ac-globalfooter div .footer-profile {display:block; margin-bottom:20px;}
-#ac-globalfooter div .footer-profile a {display:inline-block; width:40px; margin-right: 7px;}
-#ac-globalfooter div .footer-profile a img {width:100%}
-.section-highlights .section-header {padding-top: 100px}
-.subsection .section-header {padding-top: 100px;}
-
-.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.endframe, .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.media, .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.startframe, .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.endframe, .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.media, .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.endframe{
-    background-color: unset;
-    background-image: unset;
+#ac-localnav .ac-ln-title a {display: unset;}
+#ac-localnav .ac-ln-title a::before {content:""; display:inline-block; background: url('../images/logo.png') no-repeat center center; background-size: 28px 28px; width:28px; height:28px; position: relative; top: -3px;}
+#ac-localnav .ac-ln-title span {margin-left:5px}
+#globalnav .globalnav-bgm svg {font-size:20px !important;}
+#globalnav-bgm-on {display: flex;}
+#globalnav-bgm-on svg {opacity: 1; transition: opacity 0.2s ease-in-out; color:rgb(0,113,227)}
+#globalnav .globalnav-item a:hover svg {opacity: 0.5;}
+#globalnav-bgm-off svg {color: #000;}
+#menu-bgm a#menu-bgm-on svg {opacity: 1; transition: opacity 0.2s ease-in-out; color:rgb(0,113,227)}
+#menu-bgm a:hover svg {opacity: 0.5;}
+#menu-bgm a#menu-bgm-off svg {color:#000}
+.globalnav-menutrigger #trigger-bgm-on svg {opacity: 1; transition: opacity 0.2s ease-in-out; color:rgb(0,113,227)}
+.globalnav-menutrigger #trigger-bgm-off svg {color:#000}
+.globalnav-menutrigger button:hover svg {opacity: 0.5;}
+#globalnav.no-js .globalnav-menutrigger {pointer-events: unset;}
+#mobilenav-bgm-on svg {opacity: 1; transition: opacity 0.2s ease-in-out; color:rgb(0,113,227)}
+#mobilenav-bgm-off svg {color:#000}
+@media only screen and (max-width: 734px) {
+    .ac-ln-menu-items #menu-bgm {display:none;}
+    #globalnav-placeholder{display: none;}
 }
 
-.l2-portrait .typography-site-headline-more {color:#000}
-
+/* section 공통 */
+.subsection .section-header {padding-top: 100px;}
+.section-highlights .section-header {padding-top: 100px}
 .section-header .section-header-desc {font-size:1.4em;}
-#maps figure span.parking-addr-num {padding: 3px 6px; background-color: #000; color: #fff; border-radius: 5px; font-size: 0.9em; font-weight: 700;}
+/* .all-access-pass__container{display: none} */
+/* .all-access-pass {bottom:unset; } */
+@media only screen and (max-width: 1068px)  {
+    .section-header .section-header-desc {font-size:1.1em;}
+}
+@media only screen and (max-width: 734px) {
+    .subsection {margin-top: 80px;}
+    .section-header .section-header-desc {font-size:1em;}
+    
+}
 
-.tout-bus {margin-top: 20px}
-.tout-bus span {color:#000; padding-left:6px; font-size:18px; font-weight: 700; text-decoration: underline;}
+/* 메인 */
+.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:600px}
+.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top: 0;}
+.inline-media-component-container .video-wrapper .end-frame img {width: unset; height:100%}
+#main > section.section.section-welcome > div > div.welcome__video.welcome__video-avail > img {height:calc(100vh - 100px);}
+.welcome__lockup {position: relative;top: -200px;z-index: 999;}
+@media only screen and (max-width: 1068px) {
+    .inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top:0}
+    .inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:90vh}
+    /* #main > section.section.section-welcome > div > div.welcome__video.welcome__video-avail > img {height:90vh} */
+}
+@media only screen and (max-width: 734px) {
+    .inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top:0}
+    .inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:600px}
+    #main > section.section.section-welcome > div > div.welcome__video.welcome__video-avail > img {height:600px}
+    
+}
 
+/* 인사말 */
+.intro-name {font-size:1.5em; font-weight:700}
+.intro-couple {background-image: url(../images/intro/intro_couple.png)}
+.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {background-image: url(../images/intro/intro_couple_1260.png)}
+.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {background-size: 1260px 680px;background-image: url(../images/intro/intro_groom_1260.jpg)}
+.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {background-size: 1260px 680px;background-image: url(../images/intro/intro_bride_1260.jpg)}
+.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {background-size: 1260px 680px;background-image: url(../images/intro/intro_together_1260.jpg)}
+.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.endframe, .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.media, .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.startframe, .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.endframe, .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.media, .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.endframe{background-color: unset;background-image: unset;}
+.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .caption {color: #000;}
+@media (min-resolution: 144dpi),only screen and (min-resolution:1.5dppx) {
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {background-image: url(../images/intro/intro_couple_1260.png)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {background-image:url(../images/intro/intro_groom_1260.jpg)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {background-image: url(../images/intro/intro_bride_1260.jpg)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {background-image: url(../images/intro/intro_together_1260.jpg)}
+}
+@media only screen and (max-width: 1068px) {
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {background-image: url(../images/intro/intro_couple_932.png)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {background-size:932px 628px;background-image: url(../images/intro/intro_groom_932.jpg)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {background-size:932px 628px;background-image: url(../images/intro/intro_bride_932.jpg)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {background-size:932px 628px;background-image: url(../images/intro/intro_together_932.jpg)}
+}
+@media only screen and (max-width: 1068px)and (min-resolution:1.5dppx),only screen and (max-width:1068px)and (min-resolution:144dpi) {
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {background-image: url(../images/intro/intro_couple_932.png)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {background-image: url(../images/intro/intro_couple_932.png)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {background-image:url(../images/intro/intro_groom_932.jpg)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {background-image: url(../images/intro/intro_bride_932.jpg)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {background-image: url(../images/intro/intro_together_932.jpg)}
+}
+@media only screen and (max-width: 734px) {
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .caption {color: #ffffff;}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {background-image: url(../images/intro/intro_couple_734.png)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {background-size:734px 560px;background-image: url(../images/intro/intro_groom_734.jpg)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {background-size:734px 560px;background-image: url(../images/intro/intro_bride_734.jpg)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {background-size:734px 560px;background-image: url(../images/intro/intro_together_734.jpg)}
+}
+@media only screen and (max-width: 734px)and (min-resolution:1.5dppx),only screen and (max-width:734px)and (min-resolution:144dpi) {
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {background-image: url(../images/intro/intro_couple_734.png)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {background-image: url(../images/intro/intro_groom_734.jpg)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {background-image: url(../images/intro/intro_bride_734.jpg)}
+    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {background-image: url(../images/intro/intro_together_734.jpg)}
+}
 
+/* 사진첩 */
+#gallery {position: relative; padding-bottom: 206px;}
+/* #gallery > div.all-access-pass__container {position: relative} */
+#media-gallery-item-1 > p {max-width:1000px; width: 800px;}
+#media-gallery-item-1 > p > span{color:rgb(0,113,227); font-weight:700;}
+#variable-width-gallery-item-1 > div {width:100%}
+#overview-portrait-dd-zoom-1 img {width:420px}
+#overview-portrait-dd-pinch-1 img {width:440px}
+.l2-portrait .typography-site-headline-more {color:#000}
+.l2-portrait .column-copy p.typography-site-body {font-size: 1.7em;width: 400px;}
+@media only screen and (max-width: 734px) {
+    #overview-portrait-zoom1-1 > img {height: 100%;position: relative;left: -40px;}
+    #overview-portrait-zoom2-1 > img {height: 100%;}
+    #overview-portrait-zoom3-1 > img {width: 100%;}
+    #overview-portrait-zoom4-1 > img {height: 100%;}
+    #overview-portrait-zoom5-1 > img {width: 100%;}
+    #overview-portrait-zoom6-1 > img {width: 100%;}
+    #overview-portrait-zoom7-1 > img {height: 100%;}
+    #overview-portrait-zoom8-1 > img {width: 100%;}
+    #overview-portrait-dd-focus-1 > img {width:1046px;}
+    #overview-portrait-dd-zoom-1 img {width:100%}
+    #overview-portrait-dd-pinch-1 img {width:100%}
+    #overview-portrait-dd-photonic-1 {height: min-content;}
+    #overview-portrait-dd-photonic-1 img {width:inherit}
+    .l2-portrait .column-image {margin-bottom:0}
+    .l2-portrait .column-copy p.typography-site-body {font-size: 1.3em;width: 400px;}
+}
+
+/* 오시는 길 */
 .stat {margin-top: 40px;}
 .navi-info {margin-top: 20px;}
 .navi-info img {width: 24px; position: relative; top: 6px; margin-right:10px}
@@ -39,46 +137,16 @@ html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-m
 .navi-info p.desktop, .navi-info p.dual{display:block}
 .navi-info p.mobile{display:none}
 #overview-welcome-hero-endframe-1 {height: 100% !important; display:contents}
-.inline-media-component-container .video-wrapper .end-frame img {width: unset; height:100%}
-
-.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .caption {
-    color: #000;
+.tout-bus {margin-top: 20px}
+.tout-bus span {color:#000; padding-left:6px; font-size:18px; font-weight: 700; text-decoration: underline;}
+#maps figure span.parking-addr-num {padding: 3px 6px; background-color: #000; color: #fff; border-radius: 5px; font-size: 0.9em; font-weight: 700;}
+@media only screen and (max-width: 734px) {
+    .navi-info p.desktop {display:none}
+    .navi-info p.mobile, .navi-info p.dual {display:block}
 }
-#ac-globalfooter *, #ac-globalfooter *:before, #ac-globalfooter *:after {float:unset}
-.card.card-padding {min-width: 310px; }
-.instgram-story {display:block;width:60px; height:60px;border-radius: 50%; background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); padding: 3px;}
-.people-card-img-picture {width:100%; height: 100%; border-radius: 50%; background-color: #fff; background-size:cover;}
-.groom.people-card-img-picture {background-image: url('../images/people/people_groom.png');}
-.bride.people-card-img-picture {background-image: url('../images/people/people_bride.png');}
 
-#gallery {position: relative; padding-bottom: 206px;}
-
+/* 안내사항 */
 .icon-card-body {display: flex; gap: 100px}
-
-#globalnav .globalnav-bgm svg {font-size:20px !important;}
-#globalnav-bgm-on {display: flex;}
-#globalnav-bgm-on svg {opacity: 1; transition: opacity 0.2s ease-in-out; color:rgb(0,113,227)}
-#globalnav .globalnav-item a:hover svg {opacity: 0.5;}
-#globalnav-bgm-off svg {color: #000;}
-
-#menu-bgm a#menu-bgm-on svg {opacity: 1; transition: opacity 0.2s ease-in-out; color:rgb(0,113,227)}
-#menu-bgm a:hover svg {opacity: 0.5;}
-#menu-bgm a#menu-bgm-off svg {color:#000}
-
-.globalnav-menutrigger #trigger-bgm-on svg {opacity: 1; transition: opacity 0.2s ease-in-out; color:rgb(0,113,227)}
-.globalnav-menutrigger #trigger-bgm-off svg {color:#000}
-.globalnav-menutrigger button:hover svg {opacity: 0.5;}
-#globalnav.no-js .globalnav-menutrigger {pointer-events: unset;}
-
-
-#ac-localnav .ac-ln-title a {display: unset;}
-#ac-localnav .ac-ln-title a::before {content:""; display:inline-block; background: url('../images/logo.png') no-repeat center center; background-size: 28px 28px; width:28px; height:28px; position: relative; top: -3px;}
-#ac-localnav .ac-ln-title span {margin-left:5px}
-
-#mobilenav-bgm-on svg {opacity: 1; transition: opacity 0.2s ease-in-out; color:rgb(0,113,227)}
-#mobilenav-bgm-off svg {color:#000}
-
-/* 연락처 및 계좌번호 */
 .icon-card-info {padding-top: 40px;}
 .icon-card-info h2 {font-size: 2em; font-weight: 700;}
 .icon-card-info .desc {margin: 0 0 20px; display: block; font-size: 1em; color: #6c6c6c;}
@@ -94,195 +162,34 @@ html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-m
 .icon-card-info .people-card-item .people-card-box .people-info .people-tel a:nth-child(1) {color: #3fa61d;}
 .icon-card-info .people-card-item .people-card-box .people-info .people-tel a:nth-child(2) {color: var(--sk-body-link-color);}
 .icon-card-info .people-card-item .people-card-box .people-info .people-tel a .instagram {background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
-
 .icon-card-info.info-account .name {display: inline-block; width: 60px; font-size: 1.1em; font-weight: 600;}
 .icon-card-info.info-account a {display: inline-block; width: 215px; color: #000; font-size: 1em;}
 .icon-card-info.info-account a .bank {color: #fff; text-decoration: none; background: #000; font-weight: 700; padding: 2px 6px; margin: 0 15px 0 4px; border-radius: 4px; font-size: 0.9em;}
 .icon-card-info.info-account a .novisual {display:none}
 #copied {opacity: 0; transition: opacity 0.5s ease-in-out;color:#a0a0a0; display:block; margin-top:20px}
 #copied.active {opacity: 1; }
-html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {
-    padding-top: 0;
+.card.card-padding {min-width: 310px; }
+.instgram-story {display:block;width:60px; height:60px;border-radius: 50%; background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); padding: 3px;}
+.people-card-img-picture {width:100%; height: 100%; border-radius: 50%; background-color: #fff; background-size:cover;}
+.groom.people-card-img-picture {background-image: url('../images/people/people_groom.png');}
+.bride.people-card-img-picture {background-image: url('../images/people/people_bride.png');}
+@media only screen and (max-width: 1068px)  {
+    .card.card-padding {min-width: 270px; }
+    .icon-card-body {display: block;}
 }
-.welcome__lockup {
-    position: relative;
-    top: -200px;
-    z-index: 999;
+@media only screen and (max-width: 734px) {
+    .icon-card-info h2 {margin-left:0}
+    #copied {text-align: center;}
 }
-#main > section.section.section-welcome > div > div.welcome__video.welcome__video-avail > img {height:calc(100vh - 100px);}
-
-
-#overview-portrait-dd-zoom-1 img {width:420px}
-#overview-portrait-dd-pinch-1 img {width:440px}
-
-.l2-portrait .column-copy p.typography-site-body {font-size: 1.7em;width: 400px;}
 @media only screen and (max-width: 374px) {
     .card.card-padding {min-width:200px !important}
 }
 
-/* 모바일 기준 (최대 너비 734px) */
-@media only screen and (max-width: 734px) {
-    .ac-ln-menu-items #menu-bgm {display:none;}
-    section.subsection {margin-top: 80px;}
-    .section-header .section-header-desc {font-size:1em;}
-    /* #globalnav{display: none;} */
-    #globalnav-placeholder{display: none;}
-    
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top:0}
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:600px}
-    #main > section.section.section-welcome > div > div.welcome__video.welcome__video-avail > img {height:600px}
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .caption {
-        color: #ffffff;
-    }
-
-    .icon-card-info h2 {margin-left:0}
-
-    .navi-info p.desktop {display:none}
-    .navi-info p.mobile, .navi-info p.dual {display:block}
-    
-    #copied {text-align: center;}
-
-    #overview-portrait-zoom1-1 > img {height: 100%;position: relative;left: -40px;}
-    #overview-portrait-zoom2-1 > img {height: 100%;}
-    #overview-portrait-zoom3-1 > img {width: 100%;}
-    #overview-portrait-zoom4-1 > img {height: 100%;}
-    #overview-portrait-zoom5-1 > img {width: 100%;}
-    #overview-portrait-zoom6-1 > img {width: 100%;}
-    #overview-portrait-zoom7-1 > img {height: 100%;}
-    #overview-portrait-zoom8-1 > img {width: 100%;}
-    #overview-portrait-dd-focus-1 > img {width:1046px;}
-
-
-    #overview-portrait-dd-zoom-1 img {width:100%}
-    #overview-portrait-dd-pinch-1 img {width:100%}
-    #overview-portrait-dd-photonic-1 {height: min-content;}
-    #overview-portrait-dd-photonic-1 img {width:inherit}
-    .l2-portrait .column-image {margin-bottom:0}
-    .l2-portrait .column-copy p.typography-site-body {font-size: 1.3em;width: 400px;}
-
-
-}
-/* 태블릿 기준 (최대 너비 1068px) */
-@media only screen and (max-width: 1068px)  {
-
-    .section-header .section-header-desc {font-size:1.1em;}
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top:0}
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:90vh}
-    /* #main > section.section.section-welcome > div > div.welcome__video.welcome__video-avail > img {height:90vh} */
-    
-    .card.card-padding {min-width: 270px; }
-    .icon-card-body {display: block;}
-}
-
-.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {
-    background-image: url(../images/intro/intro_couple_1260.png)
-}
-
-.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {
-    background-size: 1260px 680px;
-    background-image: url(../images/intro/intro_groom_1260.jpg)
-}
-
-.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {
-    background-size: 1260px 680px;
-    background-image: url(../images/intro/intro_bride_1260.jpg)
-}
-
-.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {
-    background-size: 1260px 680px;
-    background-image: url(../images/intro/intro_together_1260.jpg)
-}
-
-@media (min-resolution: 144dpi),only screen and (min-resolution:1.5dppx) {
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {
-        background-image: url(../images/intro/intro_couple_1260.png)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {
-        background-image:url(../images/intro/intro_groom_1260.jpg)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {
-        background-image: url(../images/intro/intro_bride_1260.jpg)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {
-        background-image: url(../images/intro/intro_together_1260.jpg)
-    }
-}
-
-@media only screen and (max-width: 1068px) {
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {
-        background-image: url(../images/intro/intro_couple_932.png)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {
-        background-size:932px 628px;
-        background-image: url(../images/intro/intro_groom_932.jpg)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {
-        background-size:932px 628px;
-        background-image: url(../images/intro/intro_bride_932.jpg)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {
-        background-size:932px 628px;
-        background-image: url(../images/intro/intro_together_932.jpg)
-    }
-}
-@media only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {
-        background-image: url(../images/intro/intro_couple_932.png)
-    }
-}
-@media only screen and (max-width: 1068px)and (min-resolution:1.5dppx),only screen and (max-width:1068px)and (min-resolution:144dpi) {
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {
-        background-image: url(../images/intro/intro_couple_932.png)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {
-        background-image:url(../images/intro/intro_groom_932.jpg)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {
-        background-image: url(../images/intro/intro_bride_932.jpg)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {
-        background-image: url(../images/intro/intro_together_932.jpg)
-    }
-}
-
-@media only screen and (max-width: 734px) {
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {
-        background-image: url(../images/intro/intro_couple_734.png)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {
-        background-size:734px 560px;
-        background-image: url(../images/intro/intro_groom_734.jpg)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {
-        background-size:734px 560px;
-        background-image: url(../images/intro/intro_bride_734.jpg)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {
-        background-size:734px 560px;
-        background-image: url(../images/intro/intro_together_734.jpg)
-    }
-}
-
-@media only screen and (max-width: 734px)and (min-resolution:1.5dppx),only screen and (max-width:734px)and (min-resolution:144dpi) {
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.hardware {
-        /* background-size: 500px 500px;
-            top: 80px;
-            left: -50px; */
-        background-image: url(../images/intro/intro_couple_734.png)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .positioned-media-element.camera {
-        background-image: url(../images/intro/intro_groom_734.jpg)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-3 .positioned-media-element.camera {
-        background-image: url(../images/intro/intro_bride_734.jpg)
-    }
-    .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-4 .positioned-media-element.camera {
-        background-image: url(../images/intro/intro_together_734.jpg)
-    }
-}
-
-/* .all-access-pass__container{display: none} */
-/* /* .all-access-pass {bottom:unset; } */
+/* Footer */
 /* #ac-globalfooter {--footer-background: #fff} */
-/* #gallery > div.all-access-pass__container {position: relative} */
+#ac-globalfooter *, #ac-globalfooter *:before, #ac-globalfooter *:after {float:unset}
+#ac-globalfooter .contributor {margin-bottom: 10px; display: block; font-weight: 700; font-size: 1.2em;}
+#ac-globalfooter div .footer-profile {display:block; margin-bottom:20px;}
+#ac-globalfooter div .footer-profile a {display:inline-block; width:40px; margin-right: 7px;}
+#ac-globalfooter div .footer-profile a img {width:100%}
 .ac-gf-sosumi p {text-align:right !important}
