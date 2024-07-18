@@ -185,6 +185,7 @@ html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-a
 @media only screen and (max-width: 734px) {
     .icon-card-info h2 {margin-left:0}
     #copied {text-align: center;}
+    .slide-gallery .item-container {grid-gap: 12px}
 }
 @media only screen and (max-width: 374px) {
     .card.card-padding {min-width:200px !important}
