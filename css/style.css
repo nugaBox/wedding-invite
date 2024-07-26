@@ -44,7 +44,8 @@ html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-m
 html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top: 0;}
 html.inline-media-component-container .video-wrapper .end-frame img {width: unset; height:100%}
 html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail > img {height:calc(100vh - 100px);}
-html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail #welcome-visual {width:100%; height:calc(100vh - 100px); background-image: url(../images/main/main_desktop.jpg); background-size: cover; background-position: top;}
+html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail #welcome-visual {background-image: url(../images/main/main_desktop.jpg);}
+html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail #welcome-visual {width:100%; height:calc(100vh - 100px); background-size: cover; background-position: top;}
 .welcome__lockup {position: relative;top: -200px;z-index: 999;}
 @media only screen and (max-width: 1068px) {
     html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:90vh}
@@ -178,14 +179,22 @@ html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-a
 .people-card-img-picture {width:100%; height: 100%; border-radius: 50%; background-color: #fff; background-size:cover;}
 .groom.people-card-img-picture {background-image: url('../images/people/people_groom.png');}
 .bride.people-card-img-picture {background-image: url('../images/people/people_bride.png');}
+#info .section-header {padding-bottom:10px; display: block;}
+.info-account-box h4 {font-size:1.6em; margin-top:20px}
+.info-account-box .icon-card-info {display:grid; width:55%; min-width:800px; grid-row-gap: 5px; grid-template-columns: 50% 50%; padding-top:10px}
+.info-account-box .icon-card-info p {display:flex;}
+.info-account-box .desc {margin: 0 0 10px; display: block; font-size: 1em; color: #6c6c6c;}
 @media only screen and (max-width: 1068px)  {
     .card.card-padding {min-width: 270px; }
     .icon-card-body {display: block;}
+    .info-account-box .icon-card-info {min-width:730px;}
 }
 @media only screen and (max-width: 734px) {
     .icon-card-info h2 {margin-left:0}
     #copied {text-align: center;}
     .slide-gallery .item-container {grid-gap: 12px}
+    .info-account-box .icon-card-info {display: block}
+    .info-account-box h4, .info-account-box .icon-card-info p {margin-inline-start: unset; margin-inline-end: unset;}
 }
 @media only screen and (max-width: 374px) {
     .card.card-padding {min-width:200px !important}
@@ -199,3 +208,4 @@ html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-a
 #ac-globalfooter div .footer-profile a {display:inline-block; width:40px; margin-right: 7px;}
 #ac-globalfooter div .footer-profile a img {width:100%}
 .ac-gf-sosumi p {text-align:right !important}
+.ac-gf-sosumi p small {font-size: .85em !important;}

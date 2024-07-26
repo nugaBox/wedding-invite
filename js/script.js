@@ -41,7 +41,7 @@ function activateCopied(event) {
 
         setTimeout(function () {
             copiedElement.classList.remove('active');
-        }, 3000);
+        }, 1000);
     }
 }
 
