@@ -37,6 +37,8 @@
 	<link rel="stylesheet" href="./css/globalheader.css" type="text/css" />
 	<link rel="stylesheet" href="./css/ac-globalfooter.built.css" type="text/css" />
 	<link rel="stylesheet" href="./css/ac-localnav.built.css" type="text/css" />
+	<link rel="stylesheet" href="./css/ac-video.css" type="text/css" />
+	<link rel="stylesheet" href="./css/modal-events.css" type="text/css" />
 	<link rel="stylesheet" href="./css/main.built.css" type="text/css" />
 	<link rel="stylesheet" href="./css/overview.built.css" type="text/css" />
 	<link rel="stylesheet" href="./css/bootstrap-icons.min.css" type="text/css" />
@@ -299,14 +301,12 @@
 							<div class="section-header-desc">싱그러운 초록 빛이 가득한 여름날, <br class="small">모두에게 사랑과 기쁨을 전합니다.</div>
 						</div>
 						<div class="section-header-cta-list-wrapper">
-							<!--
 							<ul class="section-header-cta-list typography-site-section-header-link column">
 								<li class="section-header-cta-item section-header-cta-item-film" data-textanim-2>
-									<a href="#none"
+									<a href="/video/wedding_pre_20240816.mp4" target="_blank"
 										id="film-iphone-15" class="icon-wrapper section-header-cta-link"
 										data-films-modal-link role="button" data-analytics-id="film-iphone-15">
-										<span class="icon-copy">
-											<span class="visuallyhidden">식전영상</span> 🎥 영상 보기</span>
+										<span class="icon-copy">🎥 우리의 영상 보기</span>
 										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
   <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
   <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
@@ -315,7 +315,6 @@
 									</a>
 								</li>
 							</ul>
-						-->
 						</div>
 					</header>
 				</div>
@@ -1112,13 +1111,28 @@
 										<div id="icon-card-delivery" class="icon-card icon-card-delivery" data-item-index='3'>
 											<div class='icon-card-content'>
 												<div class="icon-container">
-													<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-														<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+													<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-camera-reels-fill" viewBox="0 0 16 16">
+														<path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+														<path d="M9 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+														<path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/>
 													  </svg>
 												</div>
 												<div class="copy-container">
 													<h3 class="typography-site-headline-reduced">우리를 담은 영상</h3>
-													<p class="typography-site-body-reduced">사랑으로 결혼을 준비한<br>저희의 모습을 담은 영상이에요<br><span style="color:gray">Coming Soon</span></p>
+													<p class="typography-site-body-reduced">사랑으로 결혼을 준비한<br>저희의 모습을 담은 영상이에요</p>
+												</div>
+											</div>
+											<div class='button-container'>
+												<div class='modal-container'>
+													<div class="icon-card-action">
+														<button class="icon modal-trigger" onclick="window.open('/video/wedding_pre_20240816.mp4')" tabindex="0">
+															<span class="icon-wrapper">
+																<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 15 16">
+																	<path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+																  </svg>
+															</span>
+														</button>
+													</div>
 												</div>
 											</div>
 										</div>
