@@ -40,28 +40,28 @@ section.subsection .section-header {padding-top: 100px;}
 }
 
 /* 메인 */
-html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:600px}
-html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail {padding-top: 0;}
+html.inline-media-component .section-welcome .welcome__video-media {--p-height:600px}
+html.inline-media-component .section-welcome .welcome__video-avail {padding-top: 0;}
 html.inline-media-component-container .video-wrapper .end-frame img {width: unset; height:100%}
-html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail > img {height:calc(100vh - 100px);}
-html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail #welcome-visual {background-image: url(../images/main/main_desktop.jpg);}
-html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail #welcome-visual {width:100%; height:calc(100vh - 100px); background-size: cover; background-position: top;}
+html.inline-media-component .section-welcome .welcome__video-avail > img {height:calc(100vh - 100px);}
+html.inline-media-component .section-welcome .welcome__video-avail #welcome-visual {background-image: url(../images/main/main_desktop.jpg);}
+html.inline-media-component .section-welcome .welcome__video-avail #welcome-visual {width:100%; height:calc(100vh - 100px); background-size: cover; background-position: top;}
 .welcome__lockup {position: relative;top: -200px;z-index: 999;}
 @media only screen and (max-width: 1068px) {
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:90vh}
-    /* html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail > img {height:90vh} */
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail #welcome-visual {height:90vh}
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail #welcome-visual {background-image: url(../images/main/main.jpg);}
+    html.inline-media-component .section-welcome .welcome__video-media {--p-height:90vh}
+    /* html.inline-media-component .section-welcome .welcome__video-avail > img {height:90vh} */
+    html.inline-media-component .section-welcome .welcome__video-avail #welcome-visual {height:90vh}
+    html.inline-media-component .section-welcome .welcome__video-avail #welcome-visual {background-image: url(../images/main/main.jpg);}
 }
 @media only screen and (max-width: 734px) {
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:800px}
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail > img {height:800px}
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail #welcome-visual {height:800px}
+    html.inline-media-component .section-welcome .welcome__video-media {--p-height:800px}
+    html.inline-media-component .section-welcome .welcome__video-avail > img {height:800px}
+    html.inline-media-component .section-welcome .welcome__video-avail #welcome-visual {height:800px}
 }
 @media only screen and (max-width: 424px) {
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-media {--p-height:600px}
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail > img {height:600px}
-    html.inline-media-component.no-reduced-motion .section-welcome .welcome__video-avail #welcome-visual {height:600px}
+    html.inline-media-component .section-welcome .welcome__video-media {--p-height:600px}
+    html.inline-media-component .section-welcome .welcome__video-avail > img {height:600px}
+    html.inline-media-component .section-welcome .welcome__video-avail #welcome-visual {height:600px}
 }
 
 /* 인사말 */
