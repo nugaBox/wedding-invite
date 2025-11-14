@@ -4,6 +4,12 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<script>
+		// wedding.nugabox.com에서 접근 시 love.nugabox.com으로 리다이렉트
+		if (window.location.hostname === 'wedding.nugabox.com') {
+			window.location.href = 'https://love.nugabox.com' + window.location.pathname + window.location.search + window.location.hash;
+		}
+	</script>
 	<link rel="canonical" href="index.html" />
 	<title>누가와 송이의 결혼식에 초대합니다</title>
 	<meta name="Description" content="2024년 8월 24일, 둘이 하나되는 날 👩‍❤️‍👨" />
