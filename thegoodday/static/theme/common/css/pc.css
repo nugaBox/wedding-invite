@@ -1,0 +1,81 @@
+* {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+	height: 100%;
+}
+
+.wrapper {
+	background-color: #efebe8;
+	padding: 50px 0 40px;
+}
+
+.wrapper .content_wrapper {
+	display: block;
+	position: relative;
+	width: 442px;
+	height: 746px;
+	margin: 0 auto;
+	background-image: url(../../../img/pc/pc_phone.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-repeat: no-repeat;
+}
+
+.wrapper .content_wrapper .content {
+	/*display: none;*/
+	position: absolute;
+	left: 20px;
+	top: 38px;
+	width: 402px;
+	height: 650px;
+	background-color: #fff;
+}
+
+.wrapper .bgm_area {
+	text-align: center;
+	color: #bab1aa;
+	font-size: 11px;	
+	line-height: 45px;
+}
+
+.wrapper .bgm_area img {
+	vertical-align: middle;
+}
+
+.footer_wrapper {
+	height: 100%;
+	background-color: #d2c4ba;
+	color: #fff;
+	padding: 40px 0 150px;
+}
+
+.footer_wrapper .footer {
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.7em;
+	font-size: 12px;
+}
+
+.footer_wrapper .footer a {
+	color: #fff;
+}
+
+.footer_wrapper .footer a.tel {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.footer_wrapper .footer a.block {
+	display: inline-block;
+	width: 250px;
+	height: 40px;
+	border: 1px solid #fff;
+	line-height: 40px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 13px;
+}
