@@ -8,12 +8,12 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<meta name="keywords" content="wedding, baby, feelmotion, 더굿데이, 더굿데이카드, 성장영상, 식전영상, 청첩장, 돌잔치, 결혼, 결혼식, 초대장">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://thegoodday.kr/76066">
+	<meta property="og:url" content="">
 	<meta property="og:description" content="누가와 송이의 결혼식에 초대합니다^^">
 	<meta property="og:title" content="장누가 ❤️ 백송이 결혼합니다!">
-	<meta property="og:image" content="https://thegoodday.kr/static/upload/invitation/76066/crop/b8d0ec8167da32eab8aa4e7aa60ea30e.jpg">
+	<meta property="og:image" content="../../static/upload/invitation/76066/crop/b8d0ec8167da32eab8aa4e7aa60ea30e.jpg">
 
-	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic%7CNanum+Myeongjo" rel="stylesheet">
+	<!-- Google Fonts removed; using local fallback -->
 	<link rel="stylesheet" href="../../static/theme/common/css/reset.css">
 	<link rel="stylesheet" href="../../static/theme/common/css/animate.css">
 	<link rel="stylesheet" href="../../static/theme/common/css/common%EF%B9%96version=1721259435.css">
@@ -75,7 +75,7 @@
 		<div class="bgm_area fc24" style="display:none;">
 						장누가 ❤️ 백송이 결혼합니다!									<!-- 배경음악 -->
 			<div class="bgm_action">
-				<a href="#" id="btn_bgm_control"><img src="https://thegoodday.kr/static/theme/theme206/img/sound_on.gif" style="width:30px;"></a>
+				<a href="#" id="btn_bgm_control"><img src="../../static/theme/theme206/img/sound_on.gif" style="width:30px;"></a>
 				<audio id="bgm" loop autoplay="autoplay"><source src="../../static/resource/bgm/Love_You_(JTBC_%E1%84%92%E1%85%AD%E1%84%85%E1%85%B5%E1%84%82%E1%85%A6%E1%84%86%E1%85%B5%E1%86%AB%E1%84%87%E1%85%A1%E1%86%A82_OST)-1%E1%84%8C%E1%85%A5%E1%86%AF48kb3.mp3" type="audio/mp3"></audio>
 			</div>
 					</div>
@@ -539,7 +539,7 @@
 					<a href="sms:?body=%EB%88%84%EA%B0%80%EC%99%80%20%EC%86%A1%EC%9D%B4%EC%9D%98%20%EA%B2%B0%ED%98%BC%EC%8B%9D%EC%97%90%20%EC%B4%88%EB%8C%80%ED%95%A9%EB%8B%88%EB%8B%A4%5E%5E%0Ahttps%3A%2F%2Fthegoodday.kr%2F76066"><img src="../../static/theme/theme206/img/049.png" class="h60 van-m animation animationUp"></a>
 				</div>
 				<div class="d-ib pt15 pb10 w25p tac  animation animationIn">
-					<a href="#" class="sns_link" data-clipboard-text="https://thegoodday.kr/76066"><img src="../../static/theme/theme206/img/050.png" class="h60 van-m animation animationUp"></a>
+					<a href="#" class="sns_link" data-clipboard-text=window.location.href><img src="../../static/theme/theme206/img/050.png" class="h60 van-m animation animationUp"></a>
 				</div>
 			</div>
 		</div>
@@ -556,10 +556,10 @@
 		<a href="#" id="btn_quick_bgm"><img src="../../static/img/quick_bgm_on.gif"></a>
 	</div>
 		<!-- <script src="/static/theme/app/vendor/jquery/dist/jquery.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../../static/js/jquery-1.8.3.min.js"></script>
 	<script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ityvuk2o87"></script>
 	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-	<script src="https://player.vimeo.com/api/player.js"></script>
+	<!-- Vimeo player removed (not used) -->
 	<!-- lightGallery -->
 	<!-- <script src="/static/js/lightGallery/dist/js/lightgallery.min.js"></script>
 	    <script src="/static/js/lightGallery/lib/jquery.mousewheel.min.js"></script>
@@ -636,7 +636,7 @@
 
   		// youtube API 불러옴
 		var tag = document.createElement('script');
-		tag.src = "https://www.youtube.com/player_api";
+		// YouTube player removed (not used); tag.src = '';
 		var firstScriptTag = document.getElementsByTagName('script')[0];
 		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
@@ -729,7 +729,7 @@
 		});
 		traffic_info.open(traffic_map, traffic_marker);
 		naver.maps.Event.addListener(traffic_map, 'click', function(e) {
-		    location.href = 'nmap://place?lat=35.1875423&lng=126.9324513&name=까사디루체 웨딩컨벤션&appname=http://thegoodday.kr/6';
+		    location.href = 'nmap://place?lat=35.1875423&lng=126.9324513&name=까사디루체 웨딩컨벤션&appname=';
 		});
 				
 		
@@ -763,18 +763,18 @@
 	    		content: {
 	    			title: '장누가 ♥ 백송이',
 	    			description: sns_message,
-	    			imageUrl: 'https://thegoodday.kr/static/upload/invitation/76066/crop/b8d0ec8167da32eab8aa4e7aa60ea30e.jpg',
+	    			imageUrl: '../../static/upload/invitation/76066/crop/b8d0ec8167da32eab8aa4e7aa60ea30e.jpg',
 	    			link: {
-	    				mobileWebUrl: 'https://thegoodday.kr/76066',
-	    				webUrl: 'https://thegoodday.kr/76066'
+	    				mobileWebUrl: window.location.href,
+	    				webUrl: window.location.href
 	    			}
 	    		},
 	    		buttons: [
 	    		{
 	    			title: '청첩장 바로가기',
 	    			link: {
-	    				mobileWebUrl: 'https://thegoodday.kr/76066',
-	    				webUrl: 'https://thegoodday.kr/76066'
+	    				mobileWebUrl: window.location.href,
+	    				webUrl: window.location.href
 	    			}
 	    		}
 	    		]
@@ -785,7 +785,7 @@
 	    function sns_kakaostory(event) {
 	    	event.preventDefault();
 	    	Kakao.Story.open({
-	    		url: 'https://thegoodday.kr/76066',
+	    		url: window.location.href,
 	    		text: sns_message
 	    	});
 	    }
@@ -794,7 +794,7 @@
 	    function sns_facebook(event) {
 	    	event.preventDefault();
 	    	var text = encodeURIComponent(sns_message);
-	    	var url = 'https://thegoodday.kr/76066';
+	    	var url = window.location.href;
 	    	var encodeURL = encodeURIComponent(url);
 	    	window.open('https://www.facebook.com/sharer/sharer.php?t=' + text + '&u=' + encodeURL);
 	    }
@@ -809,7 +809,7 @@
 	    function sns_twitter(event) {
 	    	event.preventDefault();
 	    	var text = encodeURIComponent(sns_message);
-	    	var url = 'https://thegoodday.kr/76066';
+	    	var url = window.location.href;
 	    	var encodeURL = encodeURIComponent(url);
 	    	window.open('https://twitter.com/share?text=' + text + '&url=' + encodeURL);
 	    }
@@ -818,7 +818,7 @@
 	    function sns_band(event) {
 	    	event.preventDefault();
 	    	var content = sns_message;
-	    	var url = 'https://thegoodday.kr/76066';
+	    	var url = window.location.href;
 
 	    	content = content + "\n" + url;
 	    	var param = 'create/post?text=' + encodeURIComponent(content);

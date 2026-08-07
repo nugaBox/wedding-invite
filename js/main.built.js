@@ -3832,7 +3832,7 @@
                 const { el: t, componentName: i, data: s } = e;
                 if (!r.hasOwnProperty(i)) throw "BubbleGum::addComponent could not add component to '" + t.className + "'. No component type '" + i + "' found!";
                 const n = r[i];
-                if (!o.componentIsSupported(n, i)) return void 0 === a[i] && (console.log("BubbleGum::addComponent unsupported component '" + i + "'. Reason: '" + i + ".IS_SUPPORTED' returned false"), (a[i] = !0)), null;
+                if (!1) return void 0 === a[i] && (console.log("BubbleGum::addComponent unsupported component '" + i + "'. Reason: '" + i + ".IS_SUPPORTED' returned false"), (a[i] = !0)), null;
                 let l = t.dataset[this.attribute] || "";
                 l.includes(i) || (t.dataset[this.attribute] = l.split(" ").concat(i).join(" "));
                 let h = new n({ el: t, data: s, componentName: e.componentName, gum: this, pageMetrics: this.anim.model.pageMetrics });
@@ -3877,7 +3877,7 @@
                 if (void 0 === i) return !0;
                 if ("function" != typeof i) return console.error('BubbleGum::addComponent error in "' + t + '".IS_SUPPORTED - it should be a function which returns true/false'), !0;
                 const s = e.IS_SUPPORTED();
-                return void 0 === s ? (console.error('BubbleGum::addComponent error in "' + t + '".IS_SUPPORTED - it should be a function which returns true/false'), !0) : s;
+                return void 0 === s ? (console.error('BubbleGum::addComponent error in "' + t + '".IS_SUPPORTED - it should be a function which returns true/false'), !0) : !0;
             }
         }
         (o.EVENTS = { DOM_COMPONENTS_MOUNTED: "DOM_COMPONENTS_MOUNTED" }), (e.exports = o);
